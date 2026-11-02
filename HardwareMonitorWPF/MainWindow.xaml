@@ -215,7 +215,7 @@
             </Grid>
             <Border Grid.Row="4" Padding="16" CornerRadius="16" Background="{DynamicResource CardBackgroundBrush}"
                     BorderBrush="{DynamicResource CardBorderBrush}" BorderThickness="1"
-                    Effect="{StaticResource CardShadowEffect}">
+                    Effect="{StaticResource CardShadowEffect}" Margin="0,0,0,6" Grid.RowSpan="2">
                 <Grid ClipToBounds="True">
                     <Path Data="M 0,48 C 38,48 62,0 100,0 L 100,100 L 0,100 Z" Stretch="Fill"
                           Width="220" Height="70" HorizontalAlignment="Right" VerticalAlignment="Bottom"
