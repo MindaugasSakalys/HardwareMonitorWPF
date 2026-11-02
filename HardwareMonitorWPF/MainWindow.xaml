@@ -31,6 +31,14 @@
             <Setter Property="Cursor" Value="Hand" />
             <Setter Property="Padding" Value="0" />
         </Style>
+        <Style x:Key="CloseButtonStyle" TargetType="Button" BasedOn="{StaticResource HeaderButtonStyle}">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Foreground" Value="#EF4444" />
+                    <Setter Property="Background" Value="#22EF4444" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
         <Style x:Key="SensorCardStyle" TargetType="Border">
             <Setter Property="Padding" Value="14" />
             <Setter Property="CornerRadius" Value="16" />
@@ -80,6 +88,7 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="38" />
                     <ColumnDefinition Width="38" />
+                    <ColumnDefinition Width="38" />
                 </Grid.ColumnDefinitions>
                 <TextBlock Text="▣" Foreground="{DynamicResource AccentTextBrush}" FontSize="29"
                            VerticalAlignment="Center" />
@@ -93,6 +102,8 @@
                         ToolTip="Always on top" Style="{StaticResource HeaderButtonStyle}" />
                 <Button x:Name="btnSettings" Grid.Column="3" Content="⚙" Click="Settings_Click"
                         ToolTip="Settings" Style="{StaticResource HeaderButtonStyle}" />
+                <Button x:Name="btnClose" Grid.Column="4" Content="×" Click="Close_Click"
+                        ToolTip="Exit" Style="{StaticResource CloseButtonStyle}" />
             </Grid>
             <Grid Grid.Row="2">
                 <Grid.RowDefinitions>

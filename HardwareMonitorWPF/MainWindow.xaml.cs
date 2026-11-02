@@ -181,6 +181,11 @@ public partial class MainWindow : Window
         settingsMenu.IsOpen = true;
     }
 
+    private void Close_Click(object sender, RoutedEventArgs e)
+    {
+        Close();
+    }
+
     private void AlwaysOnTop_Click(object sender, RoutedEventArgs e)
     {
         SetAlwaysOnTop(!Topmost);

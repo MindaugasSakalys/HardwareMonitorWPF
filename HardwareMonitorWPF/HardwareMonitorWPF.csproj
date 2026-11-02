@@ -9,6 +9,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <PackageIcon>FPS Hardware Monitor Icon 128.png</PackageIcon>
     <ApplicationIcon>FPS Hardware Monitor Icon.ico</ApplicationIcon>
+    <AssemblyVersion>1.0.1</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
